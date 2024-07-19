@@ -21,6 +21,10 @@ set -e
 if [ "$PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" = "false" ]; then
     apt update
     apt install -y chromium
+    apt install -y npm
+    npm install npm -g
+    npm install -g n
+    n 16.18.1
 fi
 
 if [ "$BUILD_SUPERSET_FRONTEND_IN_DOCKER" = "true" ]; then
