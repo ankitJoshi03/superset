@@ -479,7 +479,7 @@ DEFAULT_FEATURE_FLAGS: dict[str, bool] = {
     "DASHBOARD_CROSS_FILTERS": True,  # deprecated
     "DASHBOARD_VIRTUALIZATION": True,
     "GLOBAL_ASYNC_QUERIES": False,
-    "EMBEDDED_SUPERSET": False,
+    "EMBEDDED_SUPERSET": True,
     # Enables Alerts and reports new implementation
     "ALERT_REPORTS": False,
     "ALERT_REPORT_TABS": False,
@@ -537,7 +537,7 @@ DEFAULT_FEATURE_FLAGS: dict[str, bool] = {
     # Enabling this feature flag requires installing "playwright" pip package
     "PLAYWRIGHT_REPORTS_AND_THUMBNAILS": False,
     # Set to True to enable experimental chart plugins
-    "CHART_PLUGINS_EXPERIMENTAL": False,
+    "CHART_PLUGINS_EXPERIMENTAL": True,
     # Regardless of database configuration settings, force SQLLAB to run async using Celery
     "SQLLAB_FORCE_RUN_ASYNC": False,
     # Set to True to to enable factory resent CLI command
