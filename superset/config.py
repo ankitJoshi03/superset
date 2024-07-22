@@ -1009,7 +1009,7 @@ CELERY_CONFIG: type[CeleryConfig] = CeleryConfig
 # within the app
 # OVERRIDE_HTTP_HEADERS: sets override values for HTTP headers. These values will
 # override anything set within the app
-DEFAULT_HTTP_HEADERS: dict[str, Any] = {}
+DEFAULT_HTTP_HEADERS: dict[str, Any] = {"X-Frame-Options": "ALLOWALL"}
 OVERRIDE_HTTP_HEADERS: dict[str, Any] = {}
 HTTP_HEADERS: dict[str, Any] = {}
 
